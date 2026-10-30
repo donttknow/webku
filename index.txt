@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Color Palette</h1>
+            <p>Find your perfect color combination</p>
+        </div>
+
+        <div class="palette" id="palette"></div>
+
+        <button id="generateBtn">
+            Generate Palette
+        </button>
+
+        <p class="hint">
+            Click a color to copy its HEX code
+        </p>
+
+        <p id="message"></p>
+
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

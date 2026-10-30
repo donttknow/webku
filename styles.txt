@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5eee9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fffdfb;
+    width: 100%;
+    max-width: 850px;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(100, 70, 60, 0.12);
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #66534a;
+    margin-bottom: 12px;
+}
+
+.header p {
+    color: #aa9387;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.color-card {
+    min-width: 0;
+}
+
+.color-box {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.color-box:hover {
+    transform: translateY(-7px);
+}
+
+.hex-code {
+    color: #66534a;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.lock-btn {
+    border: none;
+    background: #f1e8e2;
+    color: #806b60;
+    padding: 9px 12px;
+    border-radius: 20px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.lock-btn.locked {
+    background: #d8c0b1;
+    color: #fff;
+}
+
+#generateBtn {
+    background: #b99580;
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+    background: #94735f;
+    transform: scale(1.04);
+}
+
+.hint {
+    color: #b5a39a;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+#message {
+    color: #8c776a;
+    font-size: 13px;
+    margin-top: 10px;
+    min-height: 15px;
+}
+
+/* Mobile display */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .palette {
+        gap: 7px;
+    }
+
+    .color-box {
+        height: 140px;
+        border-radius: 10px;
+    }
+
+    .hex-code {
+        font-size: 10px;
+    }
+
+    .lock-btn {
+        font-size: 10px;
+        padding: 7px 5px;
+    }
+
+    #generateBtn {
+        font-size: 14px;
+        padding: 14px 25px;
+    }
+}
